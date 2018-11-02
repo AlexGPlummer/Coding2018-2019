@@ -1,0 +1,7 @@
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\Slope\Slope\bin\Debug\Slope.exe.config
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\Slope\Slope\bin\Debug\Slope.exe
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\Slope\Slope\bin\Debug\Slope.pdb
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\Slope\Slope\obj\Debug\Slope.csprojAssemblyReference.cache
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\Slope\Slope\obj\Debug\Slope.csproj.CoreCompileInputs.cache
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\Slope\Slope\obj\Debug\Slope.exe
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\Slope\Slope\obj\Debug\Slope.pdb

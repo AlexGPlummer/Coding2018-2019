@@ -1,0 +1,25 @@
+c:\users\135609\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+c:\users\135609\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+c:\users\135609\source\repos\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+c:\users\135609\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+c:\users\135609\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+c:\users\135609\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
+C:\Users\135609\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
+C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\ConsoleApp4 - Copy\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\ConsoleApp4 - Copy\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\ConsoleApp4 - Copy\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\ConsoleApp4 - Copy\ConsoleApp4\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
+C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\ConsoleApp4 - Copy\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\ConsoleApp4 - Copy\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\ConsoleApp4 - Copy\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+C:\Users\135609\OneDrive - Academy District 20\Visual Studio\ConsoleApp4\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
