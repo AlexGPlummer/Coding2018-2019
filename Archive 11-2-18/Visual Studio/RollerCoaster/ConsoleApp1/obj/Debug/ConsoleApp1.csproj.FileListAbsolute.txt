@@ -1,7 +1,0 @@
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\RollerCoaster\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\RollerCoaster\ConsoleApp1\bin\Debug\ConsoleApp1.exe
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\RollerCoaster\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\RollerCoaster\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\RollerCoaster\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\RollerCoaster\ConsoleApp1\obj\Debug\ConsoleApp1.exe
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\RollerCoaster\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

@@ -1,7 +1,0 @@
-C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\Palindrome\Palindrome\bin\Debug\Palindrome.exe.config
-C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\Palindrome\Palindrome\bin\Debug\Palindrome.exe
-C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\Palindrome\Palindrome\bin\Debug\Palindrome.pdb
-C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\Palindrome\Palindrome\obj\Debug\Palindrome.csprojAssemblyReference.cache
-C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\Palindrome\Palindrome\obj\Debug\Palindrome.csproj.CoreCompileInputs.cache
-C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\Palindrome\Palindrome\obj\Debug\Palindrome.exe
-C:\Users\bluea_000\OneDrive - Academy District 20\Visual Studio\Palindrome\Palindrome\obj\Debug\Palindrome.pdb

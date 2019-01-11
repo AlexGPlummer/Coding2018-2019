@@ -1,7 +1,0 @@
-C:\Users\bluea\OneDrive - Academy District 20\Visual Studio\boring\boring\bin\Debug\boring.exe.config
-C:\Users\bluea\OneDrive - Academy District 20\Visual Studio\boring\boring\bin\Debug\boring.exe
-C:\Users\bluea\OneDrive - Academy District 20\Visual Studio\boring\boring\bin\Debug\boring.pdb
-C:\Users\bluea\OneDrive - Academy District 20\Visual Studio\boring\boring\obj\Debug\boring.csprojAssemblyReference.cache
-C:\Users\bluea\OneDrive - Academy District 20\Visual Studio\boring\boring\obj\Debug\boring.csproj.CoreCompileInputs.cache
-C:\Users\bluea\OneDrive - Academy District 20\Visual Studio\boring\boring\obj\Debug\boring.exe
-C:\Users\bluea\OneDrive - Academy District 20\Visual Studio\boring\boring\obj\Debug\boring.pdb

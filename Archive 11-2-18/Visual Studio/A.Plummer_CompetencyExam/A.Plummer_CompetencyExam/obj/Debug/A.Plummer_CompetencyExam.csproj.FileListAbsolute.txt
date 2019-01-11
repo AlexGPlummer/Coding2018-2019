@@ -1,7 +1,0 @@
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\A.Plummer_CompetencyExam\A.Plummer_CompetencyExam\bin\Debug\A.Plummer_CompetencyExam.exe.config
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\A.Plummer_CompetencyExam\A.Plummer_CompetencyExam\bin\Debug\A.Plummer_CompetencyExam.exe
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\A.Plummer_CompetencyExam\A.Plummer_CompetencyExam\bin\Debug\A.Plummer_CompetencyExam.pdb
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\A.Plummer_CompetencyExam\A.Plummer_CompetencyExam\obj\Debug\A.Plummer_CompetencyExam.csprojAssemblyReference.cache
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\A.Plummer_CompetencyExam\A.Plummer_CompetencyExam\obj\Debug\A.Plummer_CompetencyExam.csproj.CoreCompileInputs.cache
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\A.Plummer_CompetencyExam\A.Plummer_CompetencyExam\obj\Debug\A.Plummer_CompetencyExam.exe
-C:\Users\135609\OneDrive - Academy District 20\Visual Studio\A.Plummer_CompetencyExam\A.Plummer_CompetencyExam\obj\Debug\A.Plummer_CompetencyExam.pdb
