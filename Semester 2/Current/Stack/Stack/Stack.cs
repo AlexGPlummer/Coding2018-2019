@@ -8,5 +8,19 @@ namespace Stack
 {
     class Stack
     {
+        int o;
+        List<int> hold = new List<int>();
+        public int Pop;
+        public int Peek;
+
+        public void Push(int val)
+        {
+
+        }  
+        
+        public void Print()
+        {
+
+        }
     }
 }
