@@ -4,10 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GenericQueue
+namespace Queue
 {
-    class QueueGeneric<T>
+    class QueueGeneric<T> : IEmptyable, IPrintable, ICountable where T : IComparable 
     {
+        public void Count()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Print()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Empty()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void print()
+        {
+
+        }
+
         List<T> queue = new List<T>();
 
         public QueueGeneric() { }
