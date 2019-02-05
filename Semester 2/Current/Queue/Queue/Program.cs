@@ -35,14 +35,14 @@ namespace Queue
                     Console.WriteLine("What number would you like to add to the Queue");
                     int y = int.Parse(Console.ReadLine());
                     Console.WriteLine("*************************************************************");
-                    T.EnQueue(y);
+                    //T.EnQueue(y);
                 }
                 if (answer == 2)
                 {
                     Console.Clear();
                     //DeQueue
                     Console.WriteLine("*************************************************************");
-                    T.DeQueue();
+                    //T.DeQueue();
                 }
                 if (answer == 3)
                 {
@@ -57,6 +57,14 @@ namespace Queue
                     //Print
                     Console.WriteLine("*************************************************************");
                     //T.Print();
+                }
+                if (answer == 6)
+                {
+                    QueueGeneric<Currencies> currencies = new QueueGeneric<Currencies>();
+                    for (int i = 0; i < 10; i++)
+                    {
+                        
+                    }
                 }
             }
         }
@@ -118,6 +126,7 @@ namespace Queue
                     Console.WriteLine("*************************************************************");
                     myQueue.Print();
                 }
+         
             }
         }
     }

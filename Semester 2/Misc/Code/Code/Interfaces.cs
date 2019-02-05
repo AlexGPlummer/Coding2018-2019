@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Code
 {
-    interface Interfaces
+    interface IEmptyable
     {
+        void Empty();
+    }
+
+    interface IPrintable
+    {
+        void Print();
+    }
+
+    interface ICountable
+    {
+        void Count();
     }
 }
