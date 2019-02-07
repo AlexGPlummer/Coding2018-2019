@@ -49,7 +49,7 @@ namespace AlgorithmPractice
         static void problem1(float quarter, float dime, float nickel, float halfdollar, float penny)
         {
             float price = ((quarter * 0.25f) + (dime * 0.10f) + (nickel * 0.05f) + (halfdollar * 0.50f) + (penny * 0.01f));
-
+            Console.WriteLine("The amount you have is $" + price);
         }
     }
 }
