@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace AlgorithmPractice
 {
@@ -24,15 +25,35 @@ namespace AlgorithmPractice
 
                 if (answer == 1)
                 {
-                    List<string> types = new List<string> { "quarter", "dime", "nickel", "halfdollar", "penny" };
-                    List<float> data = new List<float>(5);
+                    string path = AppDomain.CurrentDomain.BaseDirectory + "Prob01.in_.txt";
+                    string line;                   
+                    System.IO.StreamReader file = new System.IO.StreamReader(path);
+                    List<string> types = new List<string> {"QUARTER", "DIME", "NICKEL", "HALFDOLLAR", "PENNY"};
+                    List<float> data = new List<float>(5);                    
                     for (int i = 0; i < 5; i++)
                     {
-                        Console.WriteLine("How many " + types[i] + "s do you have?");
-                        float o = float.Parse(Console.ReadLine());
-                        data.Add(o);
+                        float o = 0;
+                        while ((line = file.ReadLine()) != null)
+                        {
+                            //if line contains types[i] then add the number to data
+                            if (line.Contains(types[i]) == true )
+                            {
+                                line = line.Substring(types[i].Length + 1);
+                                o = float.Parse(line) + o;
+                                data.Add(o);
+                            }
+                            //System.Console.WriteLine(line);
+                        }
+                        if (data.Count < i)
+                        {
+                            data.Add(0);
+                        }
                     }
-                    problem1(data[0], data[1], data[2], data[3], data[4]);
+                    for (int i = 0; i < data.Count; i++)
+                    {
+                        Console.WriteLine(data[i]);
+                    }
+                    //problem1(data[0], data[1], data[2], data[3], data[4]);
                 }
 
                 if (answer == 2)
@@ -50,6 +71,7 @@ namespace AlgorithmPractice
         {
             float price = ((quarter * 0.25f) + (dime * 0.10f) + (nickel * 0.05f) + (halfdollar * 0.50f) + (penny * 0.01f));
             Console.WriteLine("The amount you have is $" + price);
+
         }
     }
 }
