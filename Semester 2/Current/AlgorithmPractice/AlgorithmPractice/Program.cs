@@ -25,40 +25,12 @@ namespace AlgorithmPractice
 
                 if (answer == 1)
                 {
-                    string path = AppDomain.CurrentDomain.BaseDirectory + "Prob01.in_.txt";
-                    string line;                   
-                    System.IO.StreamReader file = new System.IO.StreamReader(path);
-                    List<string> types = new List<string> {"QUARTER", "DIME", "NICKEL", "HALFDOLLAR", "PENNY"};
-                    List<float> data = new List<float>(5);                    
-                    for (int i = 0; i < 5; i++)
-                    {
-                        float o = 0;
-                        while ((line = file.ReadLine()) != null)
-                        {
-                            //if line contains types[i] then add the number to data
-                            if (line.Contains(types[i]) == true )
-                            {
-                                line = line.Substring(types[i].Length + 1);
-                                o = float.Parse(line) + o;
-                                data.Add(o);
-                            }
-                            //System.Console.WriteLine(line);
-                        }
-                        if (data.Count < i)
-                        {
-                            data.Add(0);
-                        }
-                    }
-                    for (int i = 0; i < data.Count; i++)
-                    {
-                        Console.WriteLine(data[i]);
-                    }
-                    //problem1(data[0], data[1], data[2], data[3], data[4]);
+                    Problem1();
                 }
 
                 if (answer == 2)
                 {
-
+                    Problem2();
                 }
 
                 if (answer == 3)
@@ -66,12 +38,124 @@ namespace AlgorithmPractice
 
                 }
             }
-        }
-        static void problem1(float quarter, float dime, float nickel, float halfdollar, float penny)
-        {
-            float price = ((quarter * 0.25f) + (dime * 0.10f) + (nickel * 0.05f) + (halfdollar * 0.50f) + (penny * 0.01f));
-            Console.WriteLine("The amount you have is $" + price);
+        }  
 
+        static void Problem1()
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + "Prob01.in_.txt";            
+            System.IO.StreamReader file = new System.IO.StreamReader(path);
+            string line;
+            float money = 0;
+            while ((line = file.ReadLine()) != null)
+            {
+                if (line.Contains("QUARTER") == true)
+                {
+                    line = line.Substring(8);
+                    money = (float.Parse(line) * .25f) + money;
+                }
+                if (line.Contains("DIME") == true)
+                {
+                    line = line.Substring(5);
+                    money = (float.Parse(line) * .10f) + money;
+                }
+                if (line.Contains("NICKEL") == true)
+                {
+                    line = line.Substring(7);
+                    money = (float.Parse(line) * .05f) + money;
+                }
+                if (line.Contains("PENNY") == true)
+                {
+                    line = line.Substring(6);
+                    money = (float.Parse(line) * .01f) + money;
+                }
+                if (line.Contains("HALFDOLLAR") == true)
+                {
+                    line = line.Substring(11);
+                    money = (float.Parse(line) * .50f) + money;
+                }
+            }
+            Console.WriteLine("You have $" + money);
+        }
+
+        static void Problem2()
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + "Prob02.in_.txt";
+            System.IO.StreamReader file = new System.IO.StreamReader(path);
+            string line;
+            while ((line = file.ReadLine()) != null)
+            {
+                string[] data = line.Split(null);                
+                bool isvalid = true;
+                foreach (string w in data)
+                {
+                    if (w == "-")
+                    {
+                        isvalid = false;
+                        Console.WriteLine("The input was invalid");
+                    }
+                }
+                foreach (char c in line)
+                {
+                    if (!Char.IsNumber(c) && c != '-' && c != ' ')
+                    {
+                        isvalid = false;
+                        Console.WriteLine("The input was invalid");
+                    }
+                }
+                if (isvalid == true)
+                {
+                    List<int> why = new List<int>();
+                    for (int i = 0; i < data.Length; i++)
+                    {
+                        int x = Int32.Parse(data[i]);
+                        why.Add(x);
+                        //Console.WriteLine(x);
+                    }
+                    bool ascending = false;
+                    bool desending = false;
+                    for (int i = 0; i < data.Length - 1; i++)
+                    {
+                        if (why[i] > why[i + 1])
+                        {
+                            desending = true;
+                        }
+                        if (why[i] < why[i + 1])
+                        {
+                            ascending = true;
+                        }
+                    }
+                    if (ascending == true && desending == true)
+                    {
+                        Console.WriteLine("The numbers are in a random order");
+                    }
+                    if (ascending == true && desending == false)
+                    {
+                        Console.WriteLine("The numbers are in a ascending order");
+                    }
+                    if (ascending == false && desending == true)
+                    {
+                        Console.WriteLine("The numbers are in a desending order");
+                    }
+                }
+            }
+        }
+
+        static void Problem3()
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + "Prob03.in_.txt";
+            System.IO.StreamReader file = new System.IO.StreamReader(path);
+        }
+
+        static void Problem4()
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + "Prob04.in_.txt";
+            System.IO.StreamReader file = new System.IO.StreamReader(path);
+        }
+
+        static void Problem5()
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + "Prob05.in_.txt";
+            System.IO.StreamReader file = new System.IO.StreamReader(path);
         }
     }
 }
