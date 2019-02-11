@@ -19,9 +19,13 @@ namespace AlgorithmPractice
                 Console.WriteLine("** 1. Run Problem 1");
                 Console.WriteLine("** 2. Run Problem 2");
                 Console.WriteLine("** 3. Run Problem 3");
+                Console.WriteLine("** 4. Run Problem 4");
+                Console.WriteLine("** 5. Run Problem 5");
                 Console.WriteLine("** 0. Exit the program");
                 Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 answer = int.Parse(Console.ReadLine());
+                Console.Clear();
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
                 if (answer == 1)
                 {
@@ -35,7 +39,17 @@ namespace AlgorithmPractice
 
                 if (answer == 3)
                 {
+                    Problem3();
+                }
 
+                if (answer == 4)
+                {
+                    Problem4();
+                }
+
+                if (answer == 5)
+                {
+                    Problem5();
                 }
             }
         }  
@@ -144,6 +158,16 @@ namespace AlgorithmPractice
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "Prob03.in_.txt";
             System.IO.StreamReader file = new System.IO.StreamReader(path);
+            string line;
+            while ((line = file.ReadLine()) != null)
+            {
+                string[] data = line.Split(null);
+                List<string> eh = new List<string>();
+                for (int i = 0; i < data.Length; i++)
+                {
+                    Console.WriteLine(data[i]);
+                }
+            }
         }
 
         static void Problem4()
