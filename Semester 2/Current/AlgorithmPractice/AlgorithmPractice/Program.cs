@@ -9,6 +9,8 @@ namespace AlgorithmPractice
 {
     class Program
     {
+        static char[] alpha = new char[26];
+        static char[] decode = new char[26];
         static void Main(string[] args)
         {
             int answer = 90;
@@ -19,8 +21,8 @@ namespace AlgorithmPractice
                 Console.WriteLine("** 1. Run Problem 1");
                 Console.WriteLine("** 2. Run Problem 2");
                 Console.WriteLine("** 3. Run Problem 3");
-                Console.WriteLine("** 4. Run Problem 4");
-                Console.WriteLine("** 5. Run Problem 5");
+                /*Console.WriteLine("** 4. Run Problem 4");
+                Console.WriteLine("** 5. Run Problem 5");*/
                 Console.WriteLine("** 0. Exit the program");
                 Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 answer = int.Parse(Console.ReadLine());
@@ -156,21 +158,54 @@ namespace AlgorithmPractice
 
         static void Problem3()
         {
+            lowercase();
             string path = AppDomain.CurrentDomain.BaseDirectory + "Prob03.in_.txt";
             System.IO.StreamReader file = new System.IO.StreamReader(path);
             string line;
+            int count = 0;
             while ((line = file.ReadLine()) != null)
             {
-                string[] data = line.Split(null);
-                List<string> eh = new List<string>();
-                for (int i = 0; i < data.Length; i++)
+                count++;
+                if (count == 1)
                 {
-                    Console.WriteLine(data[i]);
+                    int o = 0;
+                    foreach (char c in line)
+                    {                        
+                        decode[o] = c;
+                        o++;
+                    }
+                }
+                if (count > 1)
+                {
+                    string[] data = line.Split(null);
+                    List<string> eh = new List<string>();
+                    List<string> decoded = new List<string>();
+                    foreach (string s in data)
+                    {
+                        string letter = "";
+                        int letternumber;
+                        foreach(char c in s)
+                        {
+                            if (c != '-')
+                            {
+                                letter = letter + c;
+                            }
+                            if (c == '-')
+                            {
+                                letternumber = Convert.ToInt32(letter);
+                                Console.Write(decode[letternumber-1]);
+                                letter = "";
+                            }
+                        }
+                        letternumber = Convert.ToInt32(letter);
+                        Console.Write(decode[letternumber-1] + " ");
+                    }
+                    Console.WriteLine();
                 }
             }
         }
 
-        static void Problem4()
+        /*static void Problem4()
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "Prob04.in_.txt";
             System.IO.StreamReader file = new System.IO.StreamReader(path);
@@ -180,6 +215,36 @@ namespace AlgorithmPractice
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "Prob05.in_.txt";
             System.IO.StreamReader file = new System.IO.StreamReader(path);
+        }*/
+
+        static void lowercase()
+        {
+            alpha[0] = 'a';
+            alpha[1] = 'b';
+            alpha[2] = 'c';
+            alpha[3] = 'd';
+            alpha[4] = 'e';
+            alpha[5] = 'f';
+            alpha[6] = 'g';
+            alpha[7] = 'h';
+            alpha[8] = 'i';
+            alpha[9] = 'j';
+            alpha[10] = 'k';
+            alpha[11] = 'l';
+            alpha[12] = 'm';
+            alpha[13] = 'n';
+            alpha[14] = 'o';
+            alpha[15] = 'p';
+            alpha[16] = 'q';
+            alpha[17] = 'r';
+            alpha[18] = 's';
+            alpha[19] = 't';
+            alpha[20] = 'u';
+            alpha[21] = 'v';
+            alpha[22] = 'w';
+            alpha[23] = 'x';
+            alpha[24] = 'y';
+            alpha[25] = 'z';
         }
     }
 }
