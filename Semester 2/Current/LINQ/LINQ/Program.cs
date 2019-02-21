@@ -9,8 +9,8 @@ namespace LINQ
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {            
+            Console.WriteLine(stringTimesMethod("Hi", 3));
         }
 
         static void intersect()
@@ -50,6 +50,16 @@ namespace LINQ
             {
                 Console.WriteLine(l2[i]);
             }
+        }
+
+        static string stringTimesMethod(string stringTimes, int i)
+        {
+            string eh = stringTimes;
+            for(int j = 1; j < i; j++)
+            {
+                stringTimes = stringTimes + eh;
+            }
+            return stringTimes;
         }
     }
 }
