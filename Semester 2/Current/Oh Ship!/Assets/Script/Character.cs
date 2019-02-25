@@ -52,6 +52,13 @@ public class Character : MonoBehaviour {
             newball.transform.position = transform.position;
             newball.GetComponent<ball>().velocity = LookAtDirection(transform.eulerAngles.z);
         }
+        if (Input.GetKey(KeyCode.M))
+        {
+            GameObject newball = Instantiate(ballPrefab);
+            newball.transform.position = transform.position;
+            newball.GetComponent<ball>().velocity = LookAtDirection(transform.eulerAngles.z);
+        }
+
 
     }
     void Movementarrows()

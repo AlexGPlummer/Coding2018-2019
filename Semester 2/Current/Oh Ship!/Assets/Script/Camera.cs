@@ -10,7 +10,7 @@ public class Camera : MonoBehaviour {
     float hspeed = 3f;
     float vspeed = 1.2f;
 	void Start () {
-        transform.position = new Vector3(character.transform.position.x - 10, character.transform.position.y, -10);	
+        transform.position = new Vector3(character.transform.position.x, character.transform.position.y, -10);	
 	}
 	
 	// Update is called once per frame

@@ -22,21 +22,37 @@ public class ball : MonoBehaviour {
             //color();
             timer = 0;
         }
+        transform.position += velocity * Time.deltaTime * speed;
+        if (transform.position.x < -20)
+        {
+            velocity = Vector3.Reflect(velocity, Vector3.right);
+            transform.position = new Vector3(-20f, transform.position.y, 0);
+            //color();
+        }
+        
+        if (transform.position.x > 20)
+        {
+            velocity = Vector3.Reflect(velocity, Vector3.right);
+            transform.position = new Vector3(20f, transform.position.y, 0);
+           // color();
+        }
+        if (transform.position.y > 15)
+        {
+            velocity = Vector3.Reflect(velocity, Vector3.down);
+            transform.position = new Vector3(transform.position.x, 15f, 0);
+            //color();
+        }
+        if (transform.position.y < -15f)
+        {
+            velocity = Vector3.Reflect(velocity, Vector3.up);
+            transform.position = new Vector3(transform.position.x, -15, 0);
+            //color();
+        }
     }
     public void color()
     {
         GetComponent<SpriteRenderer>().color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
     }
-
-    public Transform originalObject;
-    public Transform reflectedObject;
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Wall")
-        {
-            reflectedObject.position = Vector3.Reflect(originalObject.position, Vector3.right);
-        }
-    }
+    
 
 }
