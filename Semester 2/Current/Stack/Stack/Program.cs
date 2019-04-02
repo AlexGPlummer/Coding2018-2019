@@ -18,8 +18,8 @@ namespace Stack
                 Console.WriteLine("** Enter the integer value for the action you want to perform");
                 Console.WriteLine("** 1. Add a number to the back of the Queue");
                 Console.WriteLine("** 2. Remove the front element of the Queue");
-                Console.WriteLine("** 3. See what's the first element in the Queue");
-                Console.WriteLine("** 4. Print the Queue");
+                Console.WriteLine("** 3. See what's the first element in the Stack");
+                Console.WriteLine("** 4. Print the Stack");
                 Console.WriteLine("** 5. Exit the program");
                 Console.WriteLine("*************************************************************");
                 answer = int.Parse(Console.ReadLine());

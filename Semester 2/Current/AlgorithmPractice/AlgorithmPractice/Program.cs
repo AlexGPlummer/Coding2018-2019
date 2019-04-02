@@ -46,12 +46,12 @@ namespace AlgorithmPractice
 
                 if (answer == 4)
                 {
-                    Problem4();
+                   // Problem4();
                 }
 
                 if (answer == 5)
                 {
-                    Problem5();
+                   // Problem5();
                 }
             }
         }  

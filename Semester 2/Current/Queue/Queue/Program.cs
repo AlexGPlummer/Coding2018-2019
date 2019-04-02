@@ -60,7 +60,7 @@ namespace Queue
                 }
                 if (answer == 6)
                 {
-                    QueueGeneric<Currencies> currencies = new QueueGeneric<Currencies>();
+                    //QueueGeneric<Currencies> currencies = new QueueGeneric<Currencies>();
                     for (int i = 0; i < 10; i++)
                     {
                         

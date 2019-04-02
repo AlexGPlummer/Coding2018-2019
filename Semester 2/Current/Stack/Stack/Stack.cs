@@ -10,7 +10,7 @@ namespace Stack
     {
         int myInt;
         List<int> Q = new List<int>();
-        public int DeQueue()
+        public int Pop()
         {
             if (Q.Count < 1)
             {
@@ -20,14 +20,14 @@ namespace Stack
             {
                 myInt = Q[0];
                 Q.Remove(Q[0]);
-                Console.WriteLine("The first element has been removed.");
+                Console.WriteLine(myInt);
             }
             return myInt;
         }
-        public void EnQueue(int val)
+        public void Push(int val)
         {
             Q.Add(val);
-            Console.WriteLine("The interger " + val + " has been added to the Queue");
+            Console.WriteLine("The interger " + val + " has been added to the Stack");
         }
         public int Peek()
         {
