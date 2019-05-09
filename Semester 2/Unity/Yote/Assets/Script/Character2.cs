@@ -8,9 +8,11 @@ public class Character2 : MonoBehaviour
     public List<Vector3> teleportLocations = new List<Vector3>();
     float jump = 3;
     float speed = 2;
+    public bool isjump = true;
+    //public Score Timer;
 
     Vector3 velocity = new Vector3(0, 0, 0);
-    Rigidbody2D rbody;
+    public Rigidbody2D rbody;
     // Use this for initialization
     void Start()
     {
@@ -24,10 +26,11 @@ public class Character2 : MonoBehaviour
     void Update()
     {
         velocity = rbody.velocity;
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isjump == false)
         {
             velocity += Vector3.up * jump;
             AudioManager.Instance.PlayOneShot(SoundEffect.Jump);
+            isjump = true;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -54,13 +57,5 @@ public class Character2 : MonoBehaviour
             velocity = new Vector3(velocity.x * (1 - Time.deltaTime * 5), velocity.y, 0);
         }
         rbody.velocity = new Vector3(Mathf.Clamp(velocity.x, -1f, 1f), Mathf.Clamp(velocity.y, -4f, 4f), 0);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Character")
-        {
-            rbody.mass = 3;
-        }
     }
 }

@@ -8,9 +8,11 @@ public class Character : MonoBehaviour
     public List<Vector3> teleportLocations = new List<Vector3>();
     float jump = 3;
     float speed = 2;
+    public bool isjump = true;
+
 
     Vector3 velocity = new Vector3(0, 0, 0);
-    Rigidbody2D rbody;
+    public Rigidbody2D rbody;
     // Use this for initialization
     void Start()
     {
@@ -24,10 +26,11 @@ public class Character : MonoBehaviour
     void Update()
     {
         velocity = rbody.velocity;
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && isjump == false)
         {
             velocity += Vector3.up * jump;
             AudioManager.Instance.PlayOneShot(SoundEffect.Jump);
+            isjump = true;
         }
         if (Input.GetKey(KeyCode.A))
         {

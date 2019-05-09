@@ -77,9 +77,12 @@ namespace BinaryTree
                 /*cur.RightChild = Remove(cur.RightChild, val)*/;
             else
             {
-
+                    if (cur.LeftChild == null)
+                        /*return cur.RightChild*/;
+                    else if (cur.RightChild == null)
+                        /*return cur.LeftChild*/;
             }
-
+            c
             //return Root;
             throw new NotImplementedException();
         }
