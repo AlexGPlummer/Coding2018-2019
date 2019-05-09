@@ -18,12 +18,12 @@ public class Score : MonoBehaviour {
 	void Update () {
         timer += Time.deltaTime;
         timer2 += Time.deltaTime;
-        if (timer >= 5 && onPlatform == false) 
+        if (timer >= 4 && onPlatform == false) 
         {
             timer = 0;
             Score1.playerOneScore++;
         }
-        if (timer2 >= 5 && onPlatform2 == false && timer2 <= 900)
+        if (timer2 >= 4 && onPlatform2 == false && timer2 <= 900)
         {
             timer2 = 0;
             Score2.playerTwoScore++;
