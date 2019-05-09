@@ -27,7 +27,7 @@ public class Powerupscript : MonoBehaviour {
         {
             character2.rbody.mass = 1;            
         }
-        if (teleporttimer >= 15)
+        if (teleporttimer >= 10)
         {
             transform.position = new Vector3(Random.Range(2,-2),Random.Range(1,-1), 1);
             teleporttimer = 0;
