@@ -23,11 +23,13 @@ public class CameraPosition : MonoBehaviour {
             GameObject.Find("Main Camera").transform.position = new Vector3(-10, 1, 1);
             GameObject.Find("Character").transform.position = new Vector3(0, 0, 0);
             GameObject.Find("Character2").transform.position = new Vector3(0, 0, 0);
+            Score1.playerOneScore = 6;
             timer = 0;
             //timer += Time.deltaTime;
         }
         if (Score2.playerTwoScore == 5)
         {
+            Score2.playerTwoScore = 6;
             GameObject.Find("Main Camera").transform.position = new Vector3(10, 1, 1);
             GameObject.Find("Character").transform.position = new Vector3(0, 0, 0);
             GameObject.Find("Character2").transform.position = new Vector3(0, 0, 0);
